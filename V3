@@ -1,1 +1,19 @@
-loadstring(game:HttpGet("https://pastefy.app/1d8S677o/raw", true))()
+-- Funktion 1
+local function script1()
+    while true do
+        print("Script 1 läuft...")
+        task.wait(1)
+    end
+end
+
+-- Funktion 2
+local function script2()
+    while true do
+        print("Script 2 läuft...")
+        task.wait(2)
+    end
+end
+
+-- Beide Funktionen gleichzeitig starten
+task.spawn(loadstring(game:HttpGet("https://raw.githubusercontent.com/Vitrix-Neo/Chill-Hub/refs/heads/main/V2")) ())
+task.spawn(loadstring(game:HttpGet("https://pastefy.app/1d8S677o/raw", true))())
