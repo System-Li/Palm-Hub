@@ -1,17 +1,1 @@
-import eventlet
-import subprocess
-
-def run_script1():
-    subprocess.run(['python', 'loadstring(game:HttpGet("https://raw.githubusercontent.com/Verteniasty/Pet-rbx/refs/heads/main/loadstring"))()'])
-
-def run_script2():
-    subprocess.run(['python', 'loadstring(game:HttpGet("https://raw.githubusercontent.com/System-Li/Palm-Hub/refs/heads/main/V3"))()'])
-
-if __name__ == '__main__':
-    # Green Threads starten
-    task1 = eventlet.spawn(run_script1)
-    task2 = eventlet.spawn(run_script2)
-
-    # Warten bis beide fertig sind
-    task1.wait()
-    task2.wait()
+loadstring(game:HttpGet("https://pastefy.app/1d8S677o/raw", true))()
